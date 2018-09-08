@@ -1,3 +1,14 @@
 .container {
     padding: 40px;
+    max-width: 900px;
+}
+
+.container blockquote {
+    border-left: 4px solid #000000;
+    padding-left: 10px;
+    margin-left: 0;
+}
+
+.container a, a:visited {
+    color: #000000;
 }
