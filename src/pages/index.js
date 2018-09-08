@@ -1,3 +1,9 @@
 import React from "react"
 
-export default () => <div>Tere world!</div>
+import Page from '../components/Page'
+
+export default () => (
+    <Page>
+        Hello world.
+    </Page>
+)

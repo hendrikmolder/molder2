@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "gatsby": "next",
+    "gatsby-plugin-netlify-cms": "^3.0.0-rc.1",
     "gatsby-plugin-sass": "^1.0.26",
     "gatsby-plugin-typography": "^2.2.0-beta.3",
+    "netlify-cms": "^2.1.1",
     "node-sass": "^4.9.3",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",

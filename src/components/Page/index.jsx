@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import pageStyles from './page.module.scss'
+import pageStyles from './page.module.css'
 
 export default class Page extends Component {
     static propTypes = {
@@ -13,7 +13,7 @@ export default class Page extends Component {
 
         return (
             <div className={pageStyles.container}>
-
+                { children }
             </div>
         )
     }
