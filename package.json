@@ -10,11 +10,15 @@
   "dependencies": {
     "gatsby": "next",
     "gatsby-plugin-netlify-cms": "^3.0.0-rc.1",
+    "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-typography": "^2.2.0-beta.3",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.44",
     "netlify-cms": "^2.1.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
     "react-typography": "^0.16.13",
     "typography": "^0.16.17"
   }

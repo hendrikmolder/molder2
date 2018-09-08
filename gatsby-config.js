@@ -6,6 +6,14 @@ module.exports = {
                 pathToConfigModule: `src/utils/typography.js`,
             },
         },
-        'gatsby-plugin-netlify-cms'
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `content`,
+                path: `${__dirname}/src/content/`,
+            },
+        },
+        'gatsby-plugin-netlify-cms',
+        'gatsby-transformer-remark'
     ]
 }
