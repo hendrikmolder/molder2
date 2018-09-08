@@ -5,7 +5,7 @@ import Page from '../components/Page'
 
 export default ({data}) => (
     <Page title="Yup.">
-        Hello world.
+        <blockquote>Test.</blockquote>
         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
     </Page>
 )
