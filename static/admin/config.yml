@@ -1,7 +1,20 @@
 backend:
   name: git-gateway
   branch: master
+
 media_library:
  name: uploadcare
  config:
    publicKey: 29907a7620b6f1832daf
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: src/content/pages
+    create: true
+    fields:
+      - { name: title, label: Name }
+      - { name: type, widget: hidden, default: page }
+      - { name: date, label: Date, widget: date }
+      - { name: author, label: Author}
+      - { name: body, label: Body, widget: markdown }
