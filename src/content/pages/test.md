@@ -4,4 +4,4 @@ type: page
 
 # Test test
 
-dafuq
+Test page
