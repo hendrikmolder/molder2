@@ -13,7 +13,8 @@ at [The University of Manchester](http://manchester.ac.uk).
 JavaScript, PHP, Node.js, MatLAB. However, recently I have done my projects with various
 JavaScript frameworks (i.e. React.js), Java, and C. I have been a part of the following
 amazing organisations and companies: [Gustav Adolf Grammar School](http://gag.ee),
-[Teleport, Inc](https://teleport.org), and [Testlio, Inc](https://testlio.com). In 2016 I also
+[Teleport, Inc](https://teleport.org), [Testlio, Inc](https://testlio.com), and
+[TransferWise](https://transferwise.com). In 2016 I also
 co-founded [Cody](https://cody.ee).
 
 **Volunteering.** Currently, I volunteer in three areas: organising events, managing a society, and
