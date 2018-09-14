@@ -20,6 +20,7 @@ module.exports = {
             options: {
               logo: "./static/favicon.png",
             }
-        }
+        },
+        `gatsby-transformer-json`
     ]
 }

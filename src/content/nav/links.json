@@ -1,0 +1,6 @@
+[
+    { "ordering": 0, "icon": "home", "href": "/" },
+    { "ordering": 1, "name": "Music", "href": "/music" },
+    { "ordering": 2, "name": "Linkedin", "href": "https://linkedin.com/in/hendrikmolder" },
+    { "ordering": 3, "name": "GitHub", "href": "https://github.com/hendrikmolder" }
+]

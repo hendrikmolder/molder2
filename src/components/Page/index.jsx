@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import 'semantic-ui-css/semantic.min.css' /* Import Semantic-UI CSS */
 
 import Navigation from '../Navigation'
 
