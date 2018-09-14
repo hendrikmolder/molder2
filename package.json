@@ -12,6 +12,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.3.1",
     "@fortawesome/react-fontawesome": "^0.1.3",
     "gatsby": "next",
+    "gatsby-plugin-favicon": "^3.1.4",
     "gatsby-plugin-netlify-cms": "^3.0.0-rc.1",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-typography": "^2.2.0-beta.3",

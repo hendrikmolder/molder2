@@ -14,6 +14,12 @@ module.exports = {
             },
         },
         'gatsby-plugin-netlify-cms',
-        'gatsby-transformer-remark'
+        'gatsby-transformer-remark',
+        {
+            resolve: `gatsby-plugin-favicon`,
+            options: {
+              logo: "./static/favicon.png",
+            }
+        }
     ]
 }
