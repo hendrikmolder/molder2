@@ -21,6 +21,7 @@ module.exports = {
               logo: "./static/favicon.png",
             }
         },
-        `gatsby-transformer-json`
+        `gatsby-transformer-json`,
+        `gatsby-plugin-sass`
     ]
 }

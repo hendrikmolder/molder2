@@ -10,7 +10,7 @@ Curious as I am, I could not resist trying out the organs - and after that thing
 
 I've performed at organ festivals, and sometimes in music shows in Estonian television and Classical Radio.
 
-![](https://ucarecdn.com/32f0514e-46fb-42a9-98dd-9bf4796e0b79/)
+![null](https://ucarecdn.com/32f0514e-46fb-42a9-98dd-9bf4796e0b79/)
 
 ## Appearances and Performances
 
@@ -25,3 +25,9 @@ You can see the gallery and more info from [Facebook](https://www.facebook.com/g
 **CD: "Gustav Adolfi Gümnaasiumi Andebaas VIII: Gen Z"**
 
 "Andebaas" is a CD produced by Gustav Adolf Grammar School featuring some young musicians. Available from the front desk at [GAG](http://gag.ee).
+
+## Practicing
+
+I'm currently playing in Whitworth Hall, University of Manchester, and outside the academic terms at the Estonian Academy of Music and Theatre.
+
+![Whitworth Hall, The University of Manchester (Photo: HM)](https://ucarecdn.com/fd8e96b7-05f0-497d-89e9-841f3486d8b8/-/crop/1080x1180/0,178/-/preview/)
