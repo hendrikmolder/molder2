@@ -9,7 +9,7 @@ author: Hendrik
 
 Test page
 
-<form name="test-movie">
+<form name="test-movie" netlify>
     <input name="movie" type="text" />
     <button type="submit">Send</button>
 </form>
