@@ -22,6 +22,13 @@ module.exports = {
             }
         },
         `gatsby-transformer-json`,
-        `gatsby-plugin-sass`
+        `gatsby-plugin-sass`,
+        {
+            resolve: `gatsby-source-medium`,
+            options: {
+                username: `@hendrik.molder`,
+                limit: 100,
+            }
+        },
     ]
 }

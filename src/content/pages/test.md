@@ -8,3 +8,8 @@ author: Hendrik
 # Test test
 
 Test page
+
+<form name="test-movie">
+    <input name="movie" type="text" />
+    <button type="submit">Send</button>
+</form>
