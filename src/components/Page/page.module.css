@@ -10,6 +10,7 @@
 }
 
 .container a, a:visited {
-    color: #FFFFFF;
+    /* Override some Typograhy.js stuff. to be changed */
+    color: #FFFFFF !important;
     text-decoration: underline;
 }
