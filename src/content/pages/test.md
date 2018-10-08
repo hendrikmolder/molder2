@@ -1,7 +1,7 @@
 ---
 title: Test
 type: page
-date: 2018-09-09T14:57:17.340Z
+date: '2018-10-09T19+01:00'
 author: Hendrik
 ---
 

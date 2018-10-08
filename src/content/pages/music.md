@@ -1,8 +1,8 @@
 ---
 title: Music
-show_title: true
+showTitle: true
 type: page
-date: 2018-09-09T14:56:11.779Z
+date: '2018-10-09T19+01:00'
 author: Hendrik Molder
 ---
 When I was a kid, I had the pleasure of learning the piano under the instruction from my teacher from the Kapp family. This passion of music grew into interest in organs once my school - Gustav Adolf Grammar School (GAG) - was donated two organs.

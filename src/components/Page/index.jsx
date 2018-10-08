@@ -14,11 +14,17 @@ export default class Page extends Component {
             PropTypes.object
         ]).isRequired,
         title: PropTypes.string.isRequired,
-        show_title: PropTypes.bool
+        showTitle: PropTypes.bool
+    }
+
+    showTitle = () => {
+        const { title } = this.props
+
+        return <h1>{ title }</h1>
     }
 
     render() {
-        const { children, title, show_title } = this.props
+        const { children, title, showTitle } = this.props
 
         return (
             <div className={pageStyles.container}>
@@ -27,7 +33,7 @@ export default class Page extends Component {
                 </Helmet>
                 <Navigation />
 
-                { show_title && `<h1>${title}</h1>` }
+                { showTitle && this.showTitle() }
                 { children }
             </div>
         )

@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: master
+  squash_merges: true
 
 media_library:
  name: uploadcare
@@ -15,8 +16,18 @@ collections:
     fields:
       - { name: title, label: Name }
       - { name: slug, label: Slug, required: false }
-      - { name: show_title, label: Show Title, widget: boolean, required: false }
+      - { name: showTitle, label: Show Title, widget: boolean, required: false, default: true }
       - { name: type, widget: hidden, default: page }
-      - { name: date, label: Date, widget: date }
+      - { name: date, label: Date, widget: date, format: YYYY-MM-DDTHHZ }
       - { name: author, label: Author}
+      - { name: body, label: Body, widget: markdown }
+  - name: "posts"
+    label: "Blog"
+    folder: src/content/blog
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: type, widget: hidden, default: blog }
+      - { name: date, label: Date, widget: date, format: YYYY-MM-DDTHHZ }
+      - { name: author, label: Author, default: "Hendrik Mölder"}
       - { name: body, label: Body, widget: markdown }

@@ -17,7 +17,7 @@ export const query = graphql`
             html
             frontmatter {
                 title
-                show_title
+                showTitle
             }
         }
     }

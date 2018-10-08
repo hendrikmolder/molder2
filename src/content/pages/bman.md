@@ -1,7 +1,7 @@
 ---
 title: BMAN
 type: page
-date: 2018-10-06T13:38:58.237Z
+date: '2018-10-09T19+01:00'
 author: Hendrik
 show_title: false
 ---
