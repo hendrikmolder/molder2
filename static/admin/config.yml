@@ -14,6 +14,8 @@ collections:
     create: true
     fields:
       - { name: title, label: Name }
+      - { name: slug, label: Slug, required: false }
+      - { name: show_title, label: Show Title, widget: boolean, required: false }
       - { name: type, widget: hidden, default: page }
       - { name: date, label: Date, widget: date }
       - { name: author, label: Author}

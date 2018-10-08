@@ -5,7 +5,7 @@ import Page from '../components/Page'
 export default ({ data }) => {
     const page = data.markdownRemark
     return (
-        <Page title={page.frontmatter.title}>
+        <Page {...page.frontmatter}>
             <div dangerouslySetInnerHTML={{ __html: page.html }} />
         </Page>
     )
@@ -17,6 +17,7 @@ export const query = graphql`
             html
             frontmatter {
                 title
+                show_title
             }
         }
     }

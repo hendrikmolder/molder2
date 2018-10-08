@@ -4,13 +4,13 @@
 }
 
 .container blockquote {
-    border-left: 4px solid #F5F5F5;
+    border-left: 4px solid #000000;
     padding-left: 10px;
     margin-left: 0;
 }
 
 .container a, a:visited {
     /* Override some Typograhy.js stuff. to be changed */
-    color: #FFFFFF !important;
+    color: #000000 !important;
     text-decoration: underline;
 }

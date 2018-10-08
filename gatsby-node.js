@@ -26,7 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
                 switch(node.frontmatter.type) {
                     case 'page':
                         createPage({
-                            path: node.fields.slug,
+                            path: node.frontmatter.slug || node.fields.slug,
                             component: pageTemplate,
                             context: {
                                 slug: node.fields.slug,
