@@ -1,18 +1,27 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { graphql, navigate } from 'gatsby'
+import { Item } from 'semantic-ui-react'
+import Moment from 'react-moment'
 
 import Page from '../components/Page'
 
 export default ({data}) => (
     <Page title="Blog" showTitle>
-        {data.allMarkdownRemark.edges.map((node, key) => (
-            <div key={node.node.id}>
-                <Link to={node.node.fields.slug} style={{ textTransform: 'uppercase' }}>{node.node.frontmatter.title}</Link>
-                &nbsp;{node.node.frontmatter.date} <br />
-                <small>{node.node.excerpt}</small>
-                <br /><br />
-            </div>
-        ))}
+        <Item.Group link>
+            {data.allMarkdownRemark.edges.map((node, key) => (
+                <Item onClick={() => navigate(node.node.fields.slug)} key={node.node.id}>
+
+                    <Item.Content>
+                        <Item.Header>{node.node.frontmatter.title}</Item.Header>
+                        <Item.Meta>
+                            <span className='date'><Moment format='DD MMM YYYY'>{node.node.frontmatter.date}</Moment></span>
+                            <span className='author'></span>
+                        </Item.Meta>
+                        <Item.Description>{node.node.excerpt}</Item.Description>
+                    </Item.Content>
+                </Item>
+            ))}
+        </Item.Group>
     </Page>
 )
 
@@ -29,7 +38,7 @@ export const query = graphql`
                     }
                     excerpt(pruneLength: 250)
                     frontmatter {
-                        date(formatString: "D MMMM YYYY")
+                        date
                         title
                     }
                 }

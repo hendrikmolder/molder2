@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { Icon } from 'semantic-ui-react'
+import Moment from 'react-moment'
 
 import Page from '../components/Page'
 import styles from './styles/post.module.scss'
@@ -11,7 +12,7 @@ export default ({ data }) => {
     return (
         <Page {...post.frontmatter} showTitle>
             <div className={styles.metaContainer}>
-                <span><Icon name='calendar alternate outline' /> {post.frontmatter.date}</span>
+                <span><Icon name='calendar alternate outline' /> <Moment format='DD MMM YYYY'>{post.frontmatter.date}</Moment></span>
                 <span><Icon name='user outline' /> {post.frontmatter.author}</span>
                 <span><Icon name='clock outline' /> {post.timeToRead} minute read</span>
             </div>
@@ -29,7 +30,7 @@ export const query = graphql`
             frontmatter {
                 title
                 author
-                date(formatString: "D MMMM YYYY")
+                date
             }
         }
     }
