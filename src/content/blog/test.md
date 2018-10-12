@@ -71,4 +71,4 @@ However, Serverless isn’t just FaaS; here’s a good article that explains Ser
 
 
 
-_This conference trip was sponsored by the School of Computer Science Student Activities Fund — you can find more information about the process of getting funding _[_here_](https://wiki.cs.manchester.ac.uk/index.php/Student_Activities_Fund)_._
+_This conference trip was sponsored by the School of Computer Science Student Activities Fund — you can find more information about the process of getting funding [here](https://wiki.cs.manchester.ac.uk/index.php/Student_Activities_Fund)._
