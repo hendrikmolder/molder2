@@ -10,7 +10,9 @@ author: Hendrik Molder
 
 This page contains resources related to my third year project.
 
+## Initial Plan & Dates
 
+[Open document](https://docs.google.com/document/d/1Pn1bz6TWPghMwD-MXuJIdXS-RvG5jRZGlIzmMho5Xic/edit)
 
 ## Lightning Talk
 
