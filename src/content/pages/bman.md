@@ -4,6 +4,10 @@ type: page
 date: '2018-10-09T19+01:00'
 author: Hendrik
 ---
+## BMAN30010: Case Study: Open Innovation at LEGO
+
+[Open presentation](https://docs.google.com/presentation/d/1-Q8JVEEShqc_0iRfOeZqRVe-l_cUqlKS81VJsHd_tZU/edit?usp=sharing)
+
 ## BMAN30010: Kellogg's Nutri Grain PLC
 
 [Open presentation](https://docs.google.com/presentation/d/1DSrvkKTGS_CfY-NfqbMFtnX2rdU5F2_qNrF4Fo0n5to/edit)
