@@ -17,3 +17,7 @@ This page contains resources related to my third year project.
 ## Lightning Talk
 
 [Open presentation](https://docs.google.com/presentation/d/1Z-72XysYcRJMfdyJ2EJXCck11r8TP4COHnjYcg3aIug/edit?usp=sharing)
+
+## Project repository (nutella)
+
+[Open repository](https://github.com/hendrikmolder/nutella)
