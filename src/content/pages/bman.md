@@ -4,6 +4,9 @@ type: page
 date: '2018-10-09T19+01:00'
 author: Hendrik
 ---
+## GFal: IP Management Case Study
+[Open presentation](https://docs.google.com/presentation/d/1AM7Afrx9vxCgqxvnI-fbK4GjPBZJt7WXwm6l_KO9aDI/edit?usp=sharing)
+
 ## BMAN30010: Case Study: Open Innovation at LEGO
 
 [Open presentation](https://docs.google.com/presentation/d/1-Q8JVEEShqc_0iRfOeZqRVe-l_cUqlKS81VJsHd_tZU/edit?usp=sharing)
