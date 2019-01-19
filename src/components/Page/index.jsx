@@ -5,7 +5,7 @@ import 'semantic-ui-css/semantic.min.css' /* Import Semantic-UI CSS */
 
 import Navigation from '../Navigation'
 
-import pageStyles from './page.module.css'
+import pageStyles from './page.module.scss'
 
 export default class Page extends Component {
     static propTypes = {

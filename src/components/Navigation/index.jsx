@@ -4,7 +4,7 @@ import { Icon } from 'semantic-ui-react'
 import { graphql, StaticQuery } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import navigationStyles from './navigation.module.css'
+import navigationStyles from './navigation.module.scss'
 
 const Navigation = ({data}) => (
     <div className={navigationStyles.container}>
