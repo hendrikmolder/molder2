@@ -13,7 +13,6 @@ export default ({ data }) => {
         <Page {...post.frontmatter} showTitle>
             <div className={styles.metaContainer}>
                 <span><Icon name='calendar alternate outline' /> <Moment format='DD MMM YYYY'>{post.frontmatter.date}</Moment></span>
-                <span><Icon name='user outline' /> {post.frontmatter.author}</span>
                 <span><Icon name='clock outline' /> {post.timeToRead} minute read</span>
             </div>
 
