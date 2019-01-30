@@ -1,7 +1,8 @@
 backend:
-  name: git-gateway
-  branch: master
-  squash_merges: true
+  name: github
+  repo: hendrikmolder/molder2
+  # branch: master
+  # squash_merges: true
 
 media_library:
  name: uploadcare
