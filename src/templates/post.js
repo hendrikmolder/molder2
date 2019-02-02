@@ -21,6 +21,19 @@ export default ({ data }) => {
     )
 }
 
+export const PostTemplate = ({ title, showTitle, timeToRead, date, content }) => (
+    <Page
+        title={title}
+        showTitle
+    >
+        <div className={styles.metaContainer}>
+            <span><Icon name='calendar alternate outline' /> <Moment format='DD MMM YYYY'>{date}</Moment></span>
+            <span><Icon name='clock outline' /> {timeToRead} minute read</span>
+        </div>
+        {content}
+    </Page>
+)
+
 export const query = graphql`
     query($slug: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {

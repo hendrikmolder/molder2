@@ -3,13 +3,25 @@ import { graphql } from 'gatsby'
 import Page from '../components/Page'
 
 export default ({ data }) => {
-    const page = data.markdownRemark
+    const { markdownRemark: page } = data
     return (
-        <Page {...page.frontmatter}>
+        <Page
+            title={page.frontmatter.title}
+            showTitle={page.frontmatter.showTitle}
+        >
             <div dangerouslySetInnerHTML={{ __html: page.html }} />
         </Page>
     )
 }
+
+export const PageTemplate = ({ title, showTitle, content }) => (
+    <Page
+        title={title}
+        showTitle={showTitle}
+    >
+        {content}
+    </Page>
+)
 
 export const query = graphql`
     query($slug: String!) {

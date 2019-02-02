@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import 'semantic-ui-css/semantic.min.css' /* Import Semantic-UI CSS */
 
-import Navigation from '../Navigation'
+import 'semantic-ui-css/semantic.min.css' /* Import Semantic-UI CSS */
+import '../../pages/styles/global.module.scss' /* Import global styles */
+
+import { StaticNavigation } from '../Navigation'
 
 import pageStyles from './page.module.scss'
 
@@ -31,7 +33,7 @@ export default class Page extends Component {
                 <Helmet>
                     <title>molder | { title }</title>
                 </Helmet>
-                <Navigation />
+                <StaticNavigation />
 
                 { showTitle && this.showTitle() }
                 { children }
