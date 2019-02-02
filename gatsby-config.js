@@ -7,7 +7,6 @@ module.exports = {
                 path: `${__dirname}/src/content/`,
             },
         },
-        'gatsby-plugin-netlify-cms',
         'gatsby-transformer-remark',
         {
             resolve: `gatsby-plugin-favicon`,
@@ -30,6 +29,12 @@ module.exports = {
             options: {
                 username: `@hendrik.molder`,
                 limit: 100,
+            }
+        },
+        {
+            resolve: `gatsby-plugin-netlify-cms`,
+            options: {
+                modulePath: `${__dirname}/src/cms/cms.js`
             }
         },
     ]
