@@ -14,6 +14,6 @@ p, span {
 }
 
 // Global styles
-body {
+body, :global(#___gatsby) {
     min-height: 100%;
 }
