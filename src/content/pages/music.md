@@ -11,7 +11,9 @@ While a student at GAG, a _signature piece _(inspired by Handel's Water Music) w
 
 I've performed at organ festivals, and sometimes in music shows in Estonian Television and Classical Radio.
 
-![null](https://ucarecdn.com/32f0514e-46fb-42a9-98dd-9bf4796e0b79/)
+![Photo from the Gustav Adolf Organ Festival in 2016 by GAG.](https://ucarecdn.com/32f0514e-46fb-42a9-98dd-9bf4796e0b79/ "Photo from the Gustav Adolf Organ Festival in 2016 by GAG.")
+
+<small>Photo from the Gustav Adolf Organ Festival in 2016 by GAG.</small>
 
 ## Appearances and Performances
 
@@ -32,3 +34,5 @@ You can see the gallery and more info from [Facebook](https://www.facebook.com/g
 While I'm in Manchester, I practice and play at the Whitworth Hall at The University of Manchester, and outside the academic terms at the Estonian Academy of Music and Theatre.
 
 ![Whitworth Hall, The University of Manchester (Photo: HM)](https://ucarecdn.com/fd8e96b7-05f0-497d-89e9-841f3486d8b8/-/crop/1080x1180/0,178/-/preview/)
+
+<small>Whitworth Hall at The University of Manchester</small>
