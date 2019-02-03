@@ -5,11 +5,11 @@ type: page
 date: '2018-10-09T19+01:00'
 author: Hendrik Molder
 ---
-When I was a kid, I had the pleasure of learning the piano under the instruction from my teacher from the Kapp family. This passion of music grew into interest in organs once my school - Gustav Adolf Grammar School (GAG) - was donated two organs.
+Since I was little, I've had the pleasure of learning the piano under the instruction of my piano teacher from the Kapp family. This passion of music grew into an interest in the organs once my school - Gustav Adolf Grammar School (GAG) - was donated two organs in 2015.
 
-Curious as I am, I could not resist trying out the organs - and after that things moved quite fast. Soon a _signature_ was developed for the School and for the time I was at GAG probably every formal celebration, event, welcoming of domestic and foreign delegations started with the signature played on the organ. I'm pretty sure I played at least couple times a week. As music teachers found the 100-years-old organ hard to learn and play, I enjoyed playing for presidents, heads of governments, ministers and secretaries, as well as teachers and students from abroad.
+While a student at GAG, a _signature piece _(inspired by Handel's Water Music) was developed for the School by an Estonian organist Toomas Trass. It quickly became a tradition to start every formal celebration, event, welcoming of domestic and foreign delegations with the signature piece played on the organ. As music teachers found the 100-years-old organ hard (and one really had to apply some light force sometimes) to learn and play, I enjoyed playing for presidents, heads of governments, ministers and secretaries, as well as teachers and students from abroad over the three years I spent at GAG.
 
-I've performed at organ festivals, and sometimes in music shows in Estonian television and Classical Radio.
+I've performed at organ festivals, and sometimes in music shows in Estonian Television and Classical Radio.
 
 ![null](https://ucarecdn.com/32f0514e-46fb-42a9-98dd-9bf4796e0b79/)
 
@@ -29,6 +29,6 @@ You can see the gallery and more info from [Facebook](https://www.facebook.com/g
 
 ## Practicing
 
-I'm currently playing in Whitworth Hall, University of Manchester, and outside the academic terms at the Estonian Academy of Music and Theatre.
+While I'm in Manchester, I practice and play at the Whitworth Hall at The University of Manchester, and outside the academic terms at the Estonian Academy of Music and Theatre.
 
 ![Whitworth Hall, The University of Manchester (Photo: HM)](https://ucarecdn.com/fd8e96b7-05f0-497d-89e9-841f3486d8b8/-/crop/1080x1180/0,178/-/preview/)
