@@ -8,7 +8,11 @@ author: Hendrik Molder
 ---
 # Traffic Data Wrangling
 
-This page contains resources related to my third year project.
+This page contains resources related to my third year project on Traffic Data Wranling. To see the content behind some links, you may have to be signed in or given access.
+
+## Weekly PPP
+
+[Open document](https://docs.google.com/document/d/1tedkUcGJwk85dZdxphawAgn9V_rnrNpqNHNBDadwloY/edit#heading=h.4xp97ubojzjv)
 
 ## Initial Plan & Dates
 
@@ -21,3 +25,10 @@ This page contains resources related to my third year project.
 ## Project repository (nutella)
 
 [Open repository](https://github.com/hendrikmolder/nutella)
+
+## Deadlines
+
+| Date       | Assignment                    |
+| ---------- | ----------------------------- |
+| 04/03/2019 | Prepare the presentation/demo |
+| 22/03/2019 | Project code submission       |
