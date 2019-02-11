@@ -36,3 +36,93 @@ While I'm in Manchester, I practice and play at the Whitworth Hall at The Univer
 ![Whitworth Hall, The University of Manchester (Photo: HM)](https://ucarecdn.com/fd8e96b7-05f0-497d-89e9-841f3486d8b8/-/crop/1080x1180/0,178/-/preview/)
 
 <small>Whitworth Hall at The University of Manchester</small>
+
+The following specification of the Whitworth Hall organ is from a British organist Jonathan Scott.
+
+Organ by: Henry Willis II (1902) \
+JW Walker & Sons Ltd (1962/69) \
+David Wells Organ Builders Ltd (2014) \
+\
+\_\_SPECIFICATION \_\_
+
+Pedal \
+1 Contra Bass 32 \
+2 Open Wood 16 \
+3 Principal 16 from Great Double Open Diapason \
+4 Bourdon 16 ext. Contra Bass \
+5 Octave 8 \
+6 Gemshorn 8 (from Positive Gemshorn) \
+7 Bass Flute 8 (ext. Bourdon) \
+8 Choral Bass 4 \
+9 Octave Flute 4 (ext. Bourdon) \
+10 Mixture IV 19-22-26-29 \
+11 Trombone 16 \
+12 Bombarde 16 (from Great Bombarde) \
+13 Octave Trombone 8 (ext. Bombarde) \
+14 Schalmey 4 
+
+Positive \
+15 Gemshorn 8 \
+16 Bourdon 8 \
+17 Quintaton 8 \
+18 Principal 4 \
+19 Rohrflute 4 \
+20 Nazard 2 2/3 \
+21 Octave 2 \
+22 Block Flute 2 \
+23 Tierce 1 3/5 \
+24 Larigot 1 1/3 \
+25 Cymbal IV 26-29-33-36 \
+26 Crumhorn 8 \
+27 Trumpet 8 (from Great Trumpet) \
+28 Clarion 4 (from Great Clarion) \
+29 Orchestral Trumpet 8 \
+30 Sub Octave \
+31 Tremulant 
+
+Great \
+32 Double Open Diapason 16 \
+33 Open Diapason I 8 \
+34 Open Diapason II 8 \
+35 Spitzflute 8 \
+36 Octave 4 \
+37 Principal 4 \
+38 Koppel Flute 4 \
+39 Super Octave 2 \
+40 Mixture IV 19-22-26-29 \
+41 Bombarde 16 \
+42 Trumpet 8 (ext. Bombarde) \
+43 Clarion 4 
+
+Swell (Enclosed) \
+44 Geigen Diapason 8 \
+45 Gedeckt 8 \
+46 Viola 8 \
+47 Vox Angelica 8 \
+48 Geigen Principal 4 \
+49 Chimney Flute 4 \
+50 Octave 2 \
+51 Sesquialtera II 12-17 \
+52 Mixture III 22-26-29 \
+53 Bassoon 16 \
+54 Trumpet 8 \
+55 Hautboy 8 (ext. Bassoon) \
+56 Tremulant \
+57 Octave 
+
+Couplers \
+Swell to Pedal \
+Swell to Great \
+Great to Pedal \
+Positive to Pedal \
+Swell to Positive \
+Positive to Great 
+
+Accessories \
+Balanced mechnical swell pedal \
+6 pistons to each division \
+8 general pistons, plus stepper pistons \
+Thumb pistons Sw-Gt, Pos-Gt, Sw-Pos, Sw-Ped, Gt-Ped, Pos-Ped \
+6 toe pistons to Swell \
+6 toe pistons to Great \
+Gt-Ped toe piston
