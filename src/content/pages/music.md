@@ -37,6 +37,10 @@ While I'm in Manchester, I practice and play at the Whitworth Hall at The Univer
 
 <small>Whitworth Hall at The University of Manchester</small>
 
+<script>$('.accordion').accordion();</script>
+
+<div class="accordion ui"><div class="title"><i aria-hidden="true" class="dropdown icon"></i>Whitworth Hall Organ Specification</div><div class="content active"><p>
+
 The following specification of the Whitworth Hall organ is from a British organist Jonathan Scott.
 
 ### Specification of the Whitworth Hall Henry Willis 1902 Organ
@@ -78,7 +82,7 @@ David Wells Organ Builders Ltd (2014)
 28 Clarion 4 (from Great Clarion) \
 29 Orchestral Trumpet 8 \
 30 Sub Octave \
-31 Tremulant 
+31 Tremulant
 
 **Great **\
 32 Double Open Diapason 16 \
@@ -126,3 +130,7 @@ Thumb pistons Sw-Gt, Pos-Gt, Sw-Pos, Sw-Ped, Gt-Ped, Pos-Ped \
 6 toe pistons to Swell \
 6 toe pistons to Great \
 Gt-Ped toe piston
+
+</p></div></div>
+
+****
