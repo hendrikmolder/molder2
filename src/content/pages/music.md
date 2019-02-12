@@ -39,13 +39,13 @@ While I'm in Manchester, I practice and play at the Whitworth Hall at The Univer
 
 The following specification of the Whitworth Hall organ is from a British organist Jonathan Scott.
 
-Organ by: Henry Willis II (1902) \
-JW Walker & Sons Ltd (1962/69) \
-David Wells Organ Builders Ltd (2014) \
-\
-\_\_SPECIFICATION \_\_
+### Specification of the Whitworth Hall Henry Willis 1902 Organ
 
-Pedal \
+Organ by: Henry Willis II (1902)\
+JW Walker & Sons Ltd (1962/69)\
+David Wells Organ Builders Ltd (2014)
+
+**Pedal **\
 1 Contra Bass 32 \
 2 Open Wood 16 \
 3 Principal 16 from Great Double Open Diapason \
@@ -61,7 +61,7 @@ Pedal \
 13 Octave Trombone 8 (ext. Bombarde) \
 14 Schalmey 4 
 
-Positive \
+**Positive **\
 15 Gemshorn 8 \
 16 Bourdon 8 \
 17 Quintaton 8 \
@@ -80,7 +80,7 @@ Positive \
 30 Sub Octave \
 31 Tremulant 
 
-Great \
+**Great **\
 32 Double Open Diapason 16 \
 33 Open Diapason I 8 \
 34 Open Diapason II 8 \
@@ -94,7 +94,7 @@ Great \
 42 Trumpet 8 (ext. Bombarde) \
 43 Clarion 4 
 
-Swell (Enclosed) \
+**Swell (Enclosed)** \
 44 Geigen Diapason 8 \
 45 Gedeckt 8 \
 46 Viola 8 \
@@ -110,7 +110,7 @@ Swell (Enclosed) \
 56 Tremulant \
 57 Octave 
 
-Couplers \
+**Couplers **\
 Swell to Pedal \
 Swell to Great \
 Great to Pedal \
@@ -118,7 +118,7 @@ Positive to Pedal \
 Swell to Positive \
 Positive to Great 
 
-Accessories \
+**Accessories **\
 Balanced mechnical swell pedal \
 6 pistons to each division \
 8 general pistons, plus stepper pistons \
