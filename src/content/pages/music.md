@@ -37,9 +37,18 @@ While I'm in Manchester, I practice and play at the Whitworth Hall at The Univer
 
 <small>Whitworth Hall at The University of Manchester</small>
 
-<script>$('.accordion').accordion();</script>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
 
-<div class="accordion ui"><div class="title"><i aria-hidden="true" class="dropdown icon"></i>Whitworth Hall Organ Specification</div><div class="content active"><p>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+<script>$('.accordion')
+.accordion()
+;</script>
+
+<div class="accordion ui"><div class="title"><i aria-hidden="true" class="dropdown icon"></i>Whitworth Hall Organ Specification</div><div class="content"><p>
 
 The following specification of the Whitworth Hall organ is from a British organist Jonathan Scott.
 
@@ -133,4 +142,4 @@ Gt-Ped toe piston
 
 </p></div></div>
 
-****
+- - -
