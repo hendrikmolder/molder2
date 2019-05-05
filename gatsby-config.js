@@ -7,20 +7,17 @@ module.exports = {
                 path: `${__dirname}/src/content/`,
             },
         },
-        'gatsby-transformer-remark',
+        {
+            resolve: 'gatsby-transformer-remark',
+            plugins: [
+                `gatsby-remark-prismjs`
+            ],
+        },
         {
             resolve: `gatsby-plugin-favicon`,
             options: {
                 logo: "./static/favicon.png",
-                plugins: [
-                    {
-                        resolve: `gatsby-remark-prismjs`,
-                        options: {
-                            classPrefix: 'language-',
-                        }
-                    }
-                ]
-            }
+            },
         },
         `gatsby-transformer-json`,
         `gatsby-plugin-sass`,
