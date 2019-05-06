@@ -21,13 +21,7 @@ module.exports = {
         },
         `gatsby-transformer-json`,
         `gatsby-plugin-sass`,
-        {
-            resolve: `gatsby-source-medium`,
-            options: {
-                username: `@hendrik.molder`,
-                limit: 100,
-            }
-        },
+        `gatsby-plugin-styled-components`,
         {
             resolve: `gatsby-plugin-netlify-cms`,
             options: {
