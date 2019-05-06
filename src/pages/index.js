@@ -1,20 +1,29 @@
-import React from "react"
-import { graphql } from 'gatsby'
+import React from 'react'
+import styled from 'styled-components'
+import Helmet from 'react-helmet'
 
-import Page from '../components/Page'
-
+import Logo from '../components/Logo'
 import './styles/global.module.scss'
 
-export default ({data}) => (
-    <Page title="Hi there." showTitle>
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-    </Page>
+const Layout = styled.div`
+    text-align: center;
+    /* position: absolute; temporary hack */
+    height: 100%;
+    width: 100% !important;
+`
+
+const StyledLogo = styled(Logo)`
+    margin-top: 216px ;
+`
+
+
+const Landing = () => (
+    <Layout>
+        <Helmet>
+            <title>molder</title>
+        </Helmet>
+        <StyledLogo width={486}/>
+    </Layout>
 )
 
-export const query = graphql`
-    query {
-        markdownRemark(frontmatter: {type: {eq: "landing"}}) {
-            html
-        }
-    }
-`
+export default Landing
