@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Page from '../components/Page'
+import Page from '../components/Layout'
 
 export default ({ data }) => {
     const { markdownRemark: page } = data
@@ -17,7 +17,7 @@ export default ({ data }) => {
 export const PageTemplate = ({ title, showTitle, content }) => (
     <Page
         title={title}
-        showTitle={showTitle}
+        // showTitle={showTitle}
     >
         {content}
     </Page>
