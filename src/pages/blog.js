@@ -3,43 +3,38 @@ import { graphql, navigate } from 'gatsby'
 import { Item } from 'semantic-ui-react'
 import Moment from 'react-moment'
 
-import Page from '../components/Page'
+import Layout from '../components/Layout'
 
-export default ({data}) => (
-    <Page title="Blog" showTitle>
+export default ({ data }) => (
+
+    <Layout title='Blog'>
         <Item.Group link>
-            {data.allMarkdownRemark.edges.map((node, key) => (
-                <Item onClick={() => navigate(node.node.fields.slug)} key={node.node.id}>
-
+            {data.allPrismicPosts.edges.map((node, key) => (
+                <Item onClick={() => navigate(`/blog/${node.node.uid}`)} key={node.node.uid}>
                     <Item.Content>
-                        <Item.Header>{node.node.frontmatter.title}</Item.Header>
+                        <Item.Header>{node.node.data.title.text}</Item.Header>
                         <Item.Meta>
-                            <span className='date'><Moment format='DD MMM YYYY'>{node.node.frontmatter.date}</Moment></span>
-                            <span className='author'></span>
+                            <span className='date'><Moment format='DD MMM YYYY'>{node.node.data.date_published}</Moment></span>
                         </Item.Meta>
-                        <Item.Description>{node.node.excerpt}</Item.Description>
+
                     </Item.Content>
                 </Item>
             ))}
         </Item.Group>
-    </Page>
+    </Layout>
 )
 
-export const query = graphql`
+export const pageQuery = graphql`
     query {
-        allMarkdownRemark(
-            filter: { frontmatter: { type: { eq: "blog" } } }
-            sort: { fields: [frontmatter___date], order: DESC }) {
+        allPrismicPosts {
             edges {
                 node {
-                    id
-                    fields {
-                        slug
-                    }
-                    excerpt(pruneLength: 250)
-                    frontmatter {
-                        date
-                        title
+                    uid
+                    data {
+                        title {
+                            text
+                        }
+                        date_published
                     }
                 }
             }
