@@ -1,9 +1,9 @@
 import React from "react"
 
-import Page from '../components/Page'
+import Layout from '../components/Layout'
 
 export default () => (
-    <Page title="Well...">
+    <Layout title="Well...">
         <span>The page you were looking for does not yet exist :(</span>
-    </Page>
+    </Layout>
 )
