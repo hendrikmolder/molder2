@@ -1,12 +1,7 @@
+require('dotenv').config()
+
 module.exports = {
     plugins: [
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `content`,
-                path: `${__dirname}/src/content/`,
-            },
-        },
         {
             resolve: 'gatsby-transformer-remark',
             plugins: [
@@ -23,10 +18,19 @@ module.exports = {
         `gatsby-plugin-sass`,
         `gatsby-plugin-styled-components`,
         {
-            resolve: `gatsby-plugin-netlify-cms`,
+            resolve: `gatsby-source-prismic`,
             options: {
-                modulePath: `${__dirname}/src/cms/cms.js`
+                repositoryName: `molder2`,
+                accessToken: `${process.env.PRISMIC_API_KEY || PRISMIC_API_KEY}`,
+                linkResolver: ({ node, key, value }) => post => `/${post.uid}`
             }
         },
+        {
+            resolve: 'gatsby-plugin-prismic-preview',
+            options: {
+                repositoryName: `molder2`,
+                linkResolver: require('./src/utils/linkResolver'),
+            }
+        }
     ]
 }
