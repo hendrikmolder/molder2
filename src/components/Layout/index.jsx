@@ -61,7 +61,7 @@ const SubTitle = styled.h2`
 `
 
 const Page = (props) => {
-    const { children, title, subtitle, meta } = props
+    const { children, title, subTitle, meta } = props
 
     return (
         <Container>
@@ -78,7 +78,7 @@ const Page = (props) => {
             <ContentContainer>
                 <MetaContainer />
                 { title && <h1>{title}</h1> }
-                { subtitle && <SubTitle>{subtitle}</SubTitle>}
+                { subTitle && <SubTitle>{subTitle}</SubTitle>}
                 { children }
             </ContentContainer>
         </Container>
