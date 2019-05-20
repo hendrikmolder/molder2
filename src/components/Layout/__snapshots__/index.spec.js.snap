@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders correctly 1`] = `
+<div
+  className="sc-bdVaJa koJdaV"
+>
+  <div
+    className="sc-bwzfXH ikwjnn"
+  >
+    <a
+      aria-current="page"
+      className=""
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      style={Object {}}
+    >
+      home
+    </a>
+    <a
+      href="/blog"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      blog
+    </a>
+    <a
+      href="/about-me"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      bio
+    </a>
+  </div>
+  <div
+    className="sc-bxivhb kmoDUg"
+  >
+    <div
+      className="sc-htpNat ibxBuA"
+    />
+    <h1>
+      Test
+    </h1>
+    <p>
+      test
+    </p>
+  </div>
+</div>
+`;
