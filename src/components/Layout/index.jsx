@@ -54,6 +54,12 @@ const ContentContainer = styled.div`
     }
 `
 
+const SubTitle = styled.h2`
+    color: rgb(132, 132, 132);
+    font-size: 18px;
+    font-weight: 300;
+`
+
 const Page = (props) => {
     const { children, title, subtitle, meta } = props
 
@@ -72,6 +78,7 @@ const Page = (props) => {
             <ContentContainer>
                 <MetaContainer />
                 { title && <h1>{title}</h1> }
+                { subtitle && <SubTitle>{subtitle}</SubTitle>}
                 { children }
             </ContentContainer>
         </Container>
