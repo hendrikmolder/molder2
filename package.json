@@ -9,7 +9,8 @@
     "build": "npm-run-all --parallel build:**",
     "build:app": "gatsby build",
     "build:functions": "netlify-lambda build src/lambda",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "test": "jest"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
@@ -52,5 +53,12 @@
         "^/\\.netlify/lambda": ""
       }
     }
+  },
+  "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "babel-preset-gatsby": "^0.1.11",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.8.0",
+    "react-test-renderer": "^16.8.6"
   }
 }
