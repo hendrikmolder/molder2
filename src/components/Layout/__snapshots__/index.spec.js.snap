@@ -1,54 +1,87 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout renders correctly 1`] = `
-<div
-  className="sc-bdVaJa koJdaV"
->
+exports[`Layout renders correctly with title 1`] = `
+Array [
   <div
-    className="sc-bwzfXH ikwjnn"
+    className="sc-bdVaJa fjMOoW"
   >
     <a
-      aria-current="page"
-      className=""
+      className="sc-bwzfXH ejWntc"
       href="/"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      style={Object {}}
     >
       home
     </a>
     <a
-      href="/blog"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-    >
-      blog
-    </a>
-    <a
-      href="/about-me"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
+      className="sc-bwzfXH ejWntc"
+      href="/bio"
+      partiallyActive={true}
     >
       bio
     </a>
-  </div>
+    <a
+      className="sc-bwzfXH ejWntc"
+      href="/blog"
+      partiallyActive={true}
+    >
+      blog
+    </a>
+  </div>,
   <div
-    className="sc-bxivhb kmoDUg"
+    className="ui container sc-htpNat hBEajF"
   >
     <div
-      className="sc-htpNat ibxBuA"
+      className="sc-bxivhb bhJkLI"
     />
     <h1>
       Test
     </h1>
     <h2
-      className="sc-ifAKCX jNbVkY"
+      className="sc-ifAKCX gmXudU"
     >
       test
     </h2>
     <p>
       test
     </p>
-  </div>
-</div>
+  </div>,
+]
+`;
+
+exports[`Layout renders correctly without title 1`] = `
+Array [
+  <div
+    className="sc-bdVaJa fjMOoW"
+  >
+    <a
+      className="sc-bwzfXH ejWntc"
+      href="/"
+    >
+      home
+    </a>
+    <a
+      className="sc-bwzfXH ejWntc"
+      href="/bio"
+      partiallyActive={true}
+    >
+      bio
+    </a>
+    <a
+      className="sc-bwzfXH ejWntc"
+      href="/blog"
+      partiallyActive={true}
+    >
+      blog
+    </a>
+  </div>,
+  <div
+    className="ui container sc-htpNat hBEajF"
+  >
+    <div
+      className="sc-bxivhb bhJkLI"
+    />
+    <p>
+      test
+    </p>
+  </div>,
+]
 `;
