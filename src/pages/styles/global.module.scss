@@ -1,12 +1,15 @@
-// Import Lato font for headings
-// @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
-// @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
 @import url("https://use.typekit.net/bbn2cvb.css");
+@import url('https://rsms.me/inter/inter.css');
+
+html, p, span, body, h1, h2, h3, h4 { font-family: 'Inter', sans-serif !important; }
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
 
 // Global headers
 h1, h2, h3 {
-    font-family: usual, sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     color: #484848;
 }
 
@@ -21,12 +24,15 @@ h1 {
 p, span {
     font-weight: 300;
     font-size: 18px;
-    line-height: 32px;
+    line-height: 28px;
+
+    strong {
+        font-weight: 600;
+    }
 }
 
 // Global styles
 body, :global(#___gatsby) {
-    font-family: usual, sans-serif;
     min-height: 100%;
     color: #24292E;
 }
