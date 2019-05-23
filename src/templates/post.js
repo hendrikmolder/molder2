@@ -7,7 +7,7 @@ export default ({ data: { prismicPosts } }) => {
 
     return (
         <React.Fragment>
-            <Layout title={data.title.text} subTitle={data.subtitle.text}>
+            <Layout title={data.title.text} subTitle={data.subtitle.text} text>
                 <div dangerouslySetInnerHTML={{ __html: data.body.html }} />
             </Layout>
         </React.Fragment>
