@@ -2,11 +2,11 @@ const linkResolver = (doc) => {
     switch (doc.type) {
         case 'posts':
             return `/blog/${doc.uid}`
-        case 'pages':
-            return (doc.data && doc.data.slug) ? `/${doc.data.slug}` : `/${doc.uid}`
+        case 'page':
+            return `/${doc.uid}`
 
         default:
-            return `${doc.uid}`
+            return `/${doc.uid}`
     }
 }
 
