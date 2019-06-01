@@ -8,7 +8,7 @@ export default ({ data: { prismicPage } }) => {
     return (
         <React.Fragment>
             <Layout title={data.title.text} subTitle={data.subtitle.text} text>
-                <div dangerouslySetInnerHTML={{ __html: data.body.html }} />
+                <div dangerouslySetInnerHTML={{ __html: data.content.html }} />
             </Layout>
         </React.Fragment>
     )
@@ -21,8 +21,8 @@ export const pageQuery = graphql`
             data {
                 title { text }
                 subtitle { text }
-                body { html }
-                auhor { uid }
+                content { html }
+                author { uid }
                 last_updated
             }
         }

@@ -25,12 +25,12 @@ module.exports = {
                 linkResolver: ({ node, key, value }) => post => `/${post.uid}`
             }
         },
-        // {
-        //     resolve: 'gatsby-plugin-prismic-preview',
-        //     options: {
-        //         repositoryName: `molder2`,
-        //         linkResolver: require('./src/utils/linkResolver'),
-        //     }
-        // }
+        {
+            resolve: 'gatsby-plugin-prismic-preview',
+            options: {
+                repositoryName: `molder2`,
+                linkResolver: require('./src/utils/linkResolver'),
+            }
+        }
     ]
 }

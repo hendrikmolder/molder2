@@ -2,6 +2,7 @@
     { "ordering": 0, "icon": "home", "href": "/" },
     { "ordering": 1, "name": "Blog", "href": "/blog" },
     { "ordering": 2, "name": "Music", "href": "/music" },
-    { "ordering": 3, "name": "Linkedin", "href": "https://linkedin.com/in/hendrikmolder" },
-    { "ordering": 4, "name": "GitHub", "href": "https://github.com/hendrikmolder" }
+    { "ordering": 3, "name": "About Me", "href": "/about-me" },
+    { "ordering": 4, "name": "Linkedin", "href": "https://linkedin.com/in/hendrikmolder" },
+    { "ordering": 5, "name": "GitHub", "href": "https://github.com/hendrikmolder" }
 ]
