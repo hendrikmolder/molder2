@@ -1,4 +1,5 @@
 require('dotenv').config()
+const linkResolver = require('./src/utils/linkResolver')
 
 module.exports = {
     plugins: [
@@ -22,14 +23,15 @@ module.exports = {
             options: {
                 repositoryName: `molder2`,
                 accessToken: `${process.env.PRISMIC_API_KEY || PRISMIC_API_KEY}`,
-                linkResolver: ({ node, key, value }) => post => `/${post.uid}`
-            }
-        },
-        {
-            resolve: 'gatsby-plugin-prismic-preview',
-            options: {
-                repositoryName: `molder2`,
-                linkResolver: require('./src/utils/linkResolver'),
+                schemas: {
+                    page: require('./src/schemas/page.json'),
+                    posts: require('./src/schemas/posts.json'),
+                    person: require('./src/schemas/person.json'),
+                    resource: require('./src/schemas/resource.json'),
+                    resources: require('./src/schemas/resources.json'),
+                    landing_page: require('./src/schemas/landing_page.json')
+                },
+                linkResolver: ({ node, key, value }) => doc => linkResolver(doc)
             }
         }
     ]

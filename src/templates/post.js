@@ -22,6 +22,17 @@ export const pageQuery = graphql`
                 title { text }
                 subtitle { text }
                 body { html }
+                author {
+                    document {
+                        ...on PrismicPerson {
+                            data {
+                                name {
+                                    text
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
