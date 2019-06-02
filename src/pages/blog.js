@@ -2,45 +2,45 @@ import React from 'react'
 import { graphql, navigate } from 'gatsby'
 import { Item } from 'semantic-ui-react'
 import Moment from 'react-moment'
+import styled from 'styled-components'
 
-import Page from '../components/Page'
+import Layout from '../components/Layout'
 
-export default ({data}) => (
-    <Page title="Blog" showTitle>
+const StyledItemHeader = styled(Item.Header)`
+    font-family: Inter;
+`
+
+export default ({ data }) => (
+
+    <Layout title='Blog'>
         <Item.Group link>
-            {data.allMarkdownRemark.edges.map((node, key) => (
-                <Item onClick={() => navigate(node.node.fields.slug)} key={node.node.id}>
-
+            {data.allPrismicPosts.edges.map((node, key) => (
+                <Item onClick={() => navigate(`/blog/${node.node.uid}`)} key={node.node.uid}>
                     <Item.Content>
-                        <Item.Header>{node.node.frontmatter.title}</Item.Header>
+                        <StyledItemHeader>{node.node.data.title.text}</StyledItemHeader>
                         <Item.Meta>
-                            <span className='date'><Moment format='DD MMM YYYY'>{node.node.frontmatter.date}</Moment></span>
-                            <span className='author'></span>
+                            <Moment format='Do MMMM YYYY'>{node.node.last_publication_date}</Moment>
                         </Item.Meta>
-                        <Item.Description>{node.node.excerpt}</Item.Description>
+
                     </Item.Content>
                 </Item>
             ))}
         </Item.Group>
-    </Page>
+    </Layout>
 )
 
-export const query = graphql`
+export const pageQuery = graphql`
     query {
-        allMarkdownRemark(
-            filter: { frontmatter: { type: { eq: "blog" } } }
-            sort: { fields: [frontmatter___date], order: DESC }) {
+        allPrismicPosts {
             edges {
                 node {
-                    id
-                    fields {
-                        slug
+                    uid
+                    data {
+                        title {
+                            text
+                        }
                     }
-                    excerpt(pruneLength: 250)
-                    frontmatter {
-                        date
-                        title
-                    }
+                    last_publication_date
                 }
             }
         }

@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders correctly with title 1`] = `
+Array [
+  <div
+    className="sc-bdVaJa fjMOoW"
+  >
+    <a
+      className="sc-bwzfXH ejWntc"
+      href="/"
+    >
+      home
+    </a>
+    <a
+      className="sc-bwzfXH ejWntc"
+      href="/bio"
+      partiallyActive={true}
+    >
+      bio
+    </a>
+    <a
+      className="sc-bwzfXH ejWntc"
+      href="/blog"
+      partiallyActive={true}
+    >
+      blog
+    </a>
+  </div>,
+  <div
+    className="ui container sc-EHOje bNFcie"
+  >
+    <div
+      className="sc-bZQynM eLXdhp"
+    />
+    <h1>
+      Test
+    </h1>
+    <h2
+      className="sc-gzVnrw iuYRHn"
+    >
+      test
+    </h2>
+    <p>
+      test
+    </p>
+  </div>,
+]
+`;
+
+exports[`Layout renders correctly without title 1`] = `
+Array [
+  <div
+    className="sc-bdVaJa fjMOoW"
+  >
+    <a
+      className="sc-bwzfXH ejWntc"
+      href="/"
+    >
+      home
+    </a>
+    <a
+      className="sc-bwzfXH ejWntc"
+      href="/bio"
+      partiallyActive={true}
+    >
+      bio
+    </a>
+    <a
+      className="sc-bwzfXH ejWntc"
+      href="/blog"
+      partiallyActive={true}
+    >
+      blog
+    </a>
+  </div>,
+  <div
+    className="ui container sc-EHOje bNFcie"
+  >
+    <div
+      className="sc-bZQynM eLXdhp"
+    />
+    <p>
+      test
+    </p>
+  </div>,
+]
+`;

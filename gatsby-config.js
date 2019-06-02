@@ -1,41 +1,38 @@
+require('dotenv').config()
+const linkResolver = require('./src/utils/linkResolver')
+
 module.exports = {
     plugins: [
         {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `content`,
-                path: `${__dirname}/src/content/`,
-            },
+            resolve: 'gatsby-transformer-remark',
+            plugins: [
+                `gatsby-remark-prismjs`
+            ],
         },
-        'gatsby-transformer-remark',
         {
             resolve: `gatsby-plugin-favicon`,
             options: {
                 logo: "./static/favicon.png",
-                plugins: [
-                    {
-                        resolve: `gatsby-remark-prismjs`,
-                        options: {
-                            classPrefix: 'language-',
-                        }
-                    }
-                ]
-            }
+            },
         },
         `gatsby-transformer-json`,
         `gatsby-plugin-sass`,
+        `gatsby-plugin-styled-components`,
         {
-            resolve: `gatsby-source-medium`,
+            resolve: `gatsby-source-prismic`,
             options: {
-                username: `@hendrik.molder`,
-                limit: 100,
+                repositoryName: `molder2`,
+                accessToken: `${process.env.PRISMIC_API_KEY || PRISMIC_API_KEY}`,
+                schemas: {
+                    page: require('./src/schemas/page.json'),
+                    posts: require('./src/schemas/posts.json'),
+                    person: require('./src/schemas/person.json'),
+                    resource: require('./src/schemas/resource.json'),
+                    resources: require('./src/schemas/resources.json'),
+                    landing_page: require('./src/schemas/landing_page.json')
+                },
+                linkResolver: ({ node, key, value }) => doc => linkResolver(doc)
             }
-        },
-        {
-            resolve: `gatsby-plugin-netlify-cms`,
-            options: {
-                modulePath: `${__dirname}/src/cms/cms.js`
-            }
-        },
+        }
     ]
 }

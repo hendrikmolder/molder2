@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
+import 'prismjs/themes/prism-solarizedlight.css'
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 import 'semantic-ui-css/semantic.min.css' /* Import Semantic-UI CSS */
+
 import '../../pages/styles/global.module.scss' /* Import global styles */
 
 import { StaticNavigation } from '../Navigation'

@@ -1,35 +1,39 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Page from '../components/Page'
+import Layout from '../components/Layout'
 
-export default ({ data }) => {
-    const { markdownRemark: page } = data
+export default ({ data: { prismicPage } }) => {
+    const { data } = prismicPage
+
     return (
-        <Page
-            title={page.frontmatter.title}
-            showTitle={page.frontmatter.showTitle}
-        >
-            <div dangerouslySetInnerHTML={{ __html: page.html }} />
-        </Page>
+        <React.Fragment>
+            <Layout title={data.title.text} subTitle={data.subtitle.text} text>
+                <div dangerouslySetInnerHTML={{ __html: data.content.html }} />
+            </Layout>
+        </React.Fragment>
     )
 }
 
-export const PageTemplate = ({ title, showTitle, content }) => (
-    <Page
-        title={title}
-        showTitle={showTitle}
-    >
-        {content}
-    </Page>
-)
-
-export const query = graphql`
-    query($slug: String!) {
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-            html
-            frontmatter {
-                title
-                showTitle
+export const pageQuery = graphql`
+    query PageByUid($uid: String!) {
+        prismicPage(uid: { eq: $uid }) {
+            uid
+            data {
+                title { text }
+                subtitle { text }
+                content { html }
+                author {
+                    document {
+                        ...on PrismicPerson {
+                            data {
+                                name {
+                                    text
+                                }
+                            }
+                        }
+                    }
+                }
+                last_updated
             }
         }
     }

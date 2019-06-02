@@ -1,19 +1,38 @@
-// Import Lato font for headings
-@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+@import url("https://use.typekit.net/bbn2cvb.css");
+@import url('https://rsms.me/inter/inter.css');
+
+html, p, span, body, h1, h2, h3, h4 { font-family: 'Inter', sans-serif !important; }
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
 
 // Global headers
 h1, h2, h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
+    font-weight: 600;
+    color: #484848;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0 0 16px;
 }
 
 
 // Global text
 p, span {
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+
+    strong {
+        font-weight: 600;
+    }
 }
 
 // Global styles
 body, :global(#___gatsby) {
     min-height: 100%;
+    color: #24292E;
 }

@@ -9,40 +9,38 @@
     "build": "npm-run-all --parallel build:**",
     "build:app": "gatsby build",
     "build:functions": "netlify-lambda build src/lambda",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "test": "jest"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.14",
-    "@fortawesome/free-solid-svg-icons": "^5.7.1",
-    "@fortawesome/react-fontawesome": "^0.1.4",
-    "gatsby": "^2.0.111",
-    "gatsby-cli": "^2.4.8",
-    "gatsby-plugin-favicon": "^3.1.5",
-    "gatsby-plugin-netlify-cms": "^3.0.12",
+    "babel-plugin-styled-components": "^1.10.0",
+    "dotenv": "^8.0.0",
+    "gatsby": "^2.8.2",
+    "gatsby-plugin-favicon": "^3.1.6",
+    "gatsby-plugin-prismic-preview": "^2.0.0",
     "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-plugin-sass": "^2.0.10",
-    "gatsby-plugin-typography": "^2.2.7",
-    "gatsby-remark-prismjs": "^3.2.4",
-    "gatsby-source-filesystem": "^1.5.39",
-    "gatsby-source-medium": "^2.0.4",
+    "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-plugin-typography": "^2.2.13",
+    "gatsby-remark-prismjs": "^3.2.9",
+    "gatsby-source-prismic": "^3.0.0-alpha.3",
     "gatsby-transformer-json": "^1.0.20",
     "gatsby-transformer-remark": "^1.7.44",
-    "jshint": "^2.9.7",
-    "netlify-cms": "^2.3.3",
+    "jshint": "^2.10.2",
     "netlify-lambda": "^0.4.0",
-    "node-sass": "^4.11.0",
-    "npm": "^6.6.0",
+    "node-sass": "^4.12.0",
+    "npm": "^6.9.0",
     "npm-run-all": "^4.1.5",
-    "prismjs": "^1.15.0",
-    "prop-types": "^15.6.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-helmet": "^5.2.0",
+    "prismjs": "^1.16.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
     "react-moment": "^0.8.4",
-    "react-typography": "^0.16.18",
+    "react-typography": "^0.16.19",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.82.5",
-    "typography": "^0.16.18"
+    "styled-components": "^4.2.1"
   },
   "proxy": {
     "/.netlify/lambda": {
@@ -51,5 +49,12 @@
         "^/\\.netlify/lambda": ""
       }
     }
+  },
+  "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "babel-preset-gatsby": "^0.1.11",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.8.0",
+    "react-test-renderer": "^16.8.6"
   }
 }

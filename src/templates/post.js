@@ -1,48 +1,53 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Icon } from 'semantic-ui-react'
-import Moment from 'react-moment'
+import Layout from '../components/Layout'
 
-import Page from '../components/Page'
-import styles from './styles/post.module.scss'
+export default ({ data: { prismicPosts } }) => {
+    const { data, last_publication_date } = prismicPosts
+    const metaData = {
+        name: data.author.document.data.name.text,
+        avatar: data.author.document.data.picture.url,
+        published_at: last_publication_date
+    }
 
-export default ({ data }) => {
-    const post = data.markdownRemark
 
     return (
-        <Page {...post.frontmatter} showTitle>
-            <div className={styles.metaContainer}>
-                <span><Icon name='calendar alternate outline' /> <Moment format='DD MMM YYYY'>{post.frontmatter.date}</Moment></span>
-                <span><Icon name='clock outline' /> {post.timeToRead} minute read</span>
-            </div>
-
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </Page>
+        <React.Fragment>
+            <Layout
+                title={data.title.text}
+                subTitle={data.subtitle.text}
+                meta={metaData}
+                text
+            >
+                <div dangerouslySetInnerHTML={{ __html: data.body.html }} />
+            </Layout>
+        </React.Fragment>
     )
 }
 
-export const PostTemplate = ({ title, showTitle, timeToRead, date, content }) => (
-    <Page
-        title={title}
-        showTitle
-    >
-        <div className={styles.metaContainer}>
-            <span><Icon name='calendar alternate outline' /> <Moment format='DD MMM YYYY'>{date}</Moment></span>
-            <span><Icon name='clock outline' /> {timeToRead} minute read</span>
-        </div>
-        {content}
-    </Page>
-)
-
-export const query = graphql`
-    query($slug: String!) {
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-            html
-            timeToRead
-            frontmatter {
-                title
-                author
-                date
+export const pageQuery = graphql`
+    query PostBySlug($uid: String!) {
+        prismicPosts(uid: { eq: $uid }) {
+            uid
+            last_publication_date
+            data {
+                title { text }
+                subtitle { text }
+                body { html }
+                author {
+                    document {
+                        ...on PrismicPerson {
+                            data {
+                                name {
+                                    text
+                                }
+                                picture {
+                                    url
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
