@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import { Container } from 'semantic-ui-react'
 
 import SiteNavigation from '../SiteNavigation'
+import PageMetadata from '../PageMetadata'
 
 import 'prismjs/themes/prism-solarizedlight.css'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
@@ -30,8 +31,7 @@ const StyledContainer = styled(Container)`
 `
 
 const MetaContainer = styled.div`
-    min-height: 48px;
-    margin: 0 0 38px;
+    margin: 0 0 24px;
 `
 
 const SubTitle = styled.h2`
@@ -43,7 +43,6 @@ const SubTitle = styled.h2`
 
 const Page = (props) => {
     const { children, title, subTitle, meta, text } = props
-
     return (
         <React.Fragment>
             <SiteNavigation items={MENU_ITEMS} />
@@ -52,10 +51,12 @@ const Page = (props) => {
                     <title>{ title ? `${title} | molder` : `molder` }</title>
                 </Helmet>
 
-                    <MetaContainer />
-                    { title && <h1>{title}</h1> }
-                    { subTitle && <SubTitle>{subTitle}</SubTitle>}
-                    { children }
+                <MetaContainer>
+                    { meta && <PageMetadata {...meta} /> }
+                </MetaContainer>
+                { title && <h1>{title}</h1> }
+                { subTitle && <SubTitle>{subTitle}</SubTitle>}
+                { children }
             </StyledContainer>
         </React.Fragment>
     )
@@ -69,6 +70,7 @@ Page.propTypes = {
     title: PropTypes.string,
     subTitle: PropTypes.string,
     text: PropTypes.bool,
+    meta: PropTypes.object
 }
 
 export default Page
