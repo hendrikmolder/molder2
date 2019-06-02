@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageMetadata renders correctly 1`] = `
+<div
+  className="sc-bwzfXH ehjSNy"
+>
+  <img
+    className="ui avatar image"
+    src="https://localhost/image.jpeg"
+  />
+  <div
+    className="sc-bdVaJa juvHRq"
+  >
+    test
+    <time
+      className="sc-htpNat fBvumx"
+      dateTime={"2019-06-02T14:49:07.000Z"}
+    >
+      2nd June 2019
+    </time>
+  </div>
+</div>
+`;
