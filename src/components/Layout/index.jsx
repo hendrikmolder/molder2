@@ -12,7 +12,8 @@ import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 import 'semantic-ui-css/semantic.min.css' /* Import Semantic-UI CSS */
 
 const MENU_ITEMS = [
-    { name: "bio", href: "/bio" },
+    { name: "linkedin", href: "https://linkedin.com/in/hendrikmolder" },
+    { name: "music", href: "/music" },
     { name: "blog", href: "/blog" },
 ]
 
