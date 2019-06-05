@@ -43,7 +43,7 @@ const SubTitle = styled.h2`
 `
 
 const Page = (props) => {
-    const { children, title, subTitle, meta, text } = props
+    const { children, title, showTitle, subTitle, meta, text } = props
     return (
         <React.Fragment>
             <SiteNavigation items={MENU_ITEMS} />
@@ -55,7 +55,7 @@ const Page = (props) => {
                 <MetaContainer>
                     { meta && <PageMetadata {...meta} /> }
                 </MetaContainer>
-                { title && <h1>{title}</h1> }
+                { showTitle !== "false" ? title && <h1>{title}</h1> : null}
                 { subTitle && <SubTitle>{subTitle}</SubTitle>}
                 { children }
             </StyledContainer>
@@ -69,6 +69,7 @@ Page.propTypes = {
         PropTypes.object
     ]).isRequired,
     title: PropTypes.string,
+    showTitle: PropTypes.bool,
     subTitle: PropTypes.string,
     text: PropTypes.bool,
     meta: PropTypes.object
