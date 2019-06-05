@@ -2,23 +2,20 @@
 
 exports[`SiteNavigation renders correctly 1`] = `
 <div
-  className="sc-bdVaJa fjMOoW"
+  className="sc-bdVaJa ekuuOW"
 >
   <a
-    className="sc-bwzfXH ejWntc"
     href="/"
   >
     home
   </a>
   <a
-    className="sc-bwzfXH ejWntc"
     href="/"
     partiallyActive={true}
   >
     bio
   </a>
   <a
-    className="sc-bwzfXH ejWntc"
     href="/blog"
     partiallyActive={true}
   >

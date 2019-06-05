@@ -3,23 +3,25 @@
 exports[`Layout renders correctly with title 1`] = `
 Array [
   <div
-    className="sc-bdVaJa fjMOoW"
+    className="sc-bdVaJa ekuuOW"
   >
     <a
-      className="sc-bwzfXH ejWntc"
       href="/"
     >
       home
     </a>
     <a
-      className="sc-bwzfXH ejWntc"
-      href="/bio"
-      partiallyActive={true}
+      href="https://linkedin.com/in/hendrikmolder"
     >
-      bio
+      linkedin
     </a>
     <a
-      className="sc-bwzfXH ejWntc"
+      href="/music"
+      partiallyActive={true}
+    >
+      music
+    </a>
+    <a
       href="/blog"
       partiallyActive={true}
     >
@@ -27,16 +29,16 @@ Array [
     </a>
   </div>,
   <div
-    className="ui container sc-EHOje bNFcie"
+    className="ui container sc-ifAKCX gNRYGQ"
   >
     <div
-      className="sc-bZQynM eLXdhp"
+      className="sc-EHOje hmOhql"
     />
     <h1>
       Test
     </h1>
     <h2
-      className="sc-gzVnrw iuYRHn"
+      className="sc-bZQynM ffMfhA"
     >
       test
     </h2>
@@ -50,23 +52,25 @@ Array [
 exports[`Layout renders correctly without title 1`] = `
 Array [
   <div
-    className="sc-bdVaJa fjMOoW"
+    className="sc-bdVaJa ekuuOW"
   >
     <a
-      className="sc-bwzfXH ejWntc"
       href="/"
     >
       home
     </a>
     <a
-      className="sc-bwzfXH ejWntc"
-      href="/bio"
-      partiallyActive={true}
+      href="https://linkedin.com/in/hendrikmolder"
     >
-      bio
+      linkedin
     </a>
     <a
-      className="sc-bwzfXH ejWntc"
+      href="/music"
+      partiallyActive={true}
+    >
+      music
+    </a>
+    <a
       href="/blog"
       partiallyActive={true}
     >
@@ -74,10 +78,10 @@ Array [
     </a>
   </div>,
   <div
-    className="ui container sc-EHOje bNFcie"
+    className="ui container sc-ifAKCX gNRYGQ"
   >
     <div
-      className="sc-bZQynM eLXdhp"
+      className="sc-EHOje hmOhql"
     />
     <p>
       test
