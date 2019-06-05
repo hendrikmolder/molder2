@@ -11,19 +11,18 @@ const NavigationContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-`
 
-const StyledLink = styled(Link)`
-    font-size: 14px;
-    font-weight: 500;
-    margin: 0 10px 0;
-    color: rgb(132, 132, 132);
-
-    :hover {
-        text-decoration: underline;
+    a {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0 10px 0;
         color: rgb(132, 132, 132);
-    }
 
+        :hover {
+            text-decoration: underline;
+            color: rgb(132, 132, 132);
+        }
+    }
 `
 
 const SiteNavigation = (props) => {
@@ -31,19 +30,26 @@ const SiteNavigation = (props) => {
 
     return (
         <NavigationContainer>
-            <StyledLink to="/" activeStyle={{ color: 'black' }}>home</StyledLink>
+            <Link to="/" activeStyle={{ color: 'black' }}>home</Link>
             { items.map((item, key) => {
                 const { name, href } = item
 
-                return (
-                    <StyledLink
+                return href[0] === '/' ? (
+                    <Link
                         to={href}
                         key={key}
                         activeStyle={{ color: 'black' }}
                         partiallyActive={true}
                     >
                         {name}
-                    </StyledLink>
+                    </Link>
+                ) : (
+                    <a
+                        href={href}
+                        key={key}
+                    >
+                        {name}
+                    </a>
                 )
             })}
         </NavigationContainer>
