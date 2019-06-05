@@ -7,6 +7,14 @@
         "label": "title"
       }
     },
+    "show_title": {
+      "type": "Select",
+      "config": {
+        "options": ["true", "false"],
+        "default_value": "true",
+        "label": "Show Title"
+      }
+    },
     "subtitle": {
       "type": "StructuredText",
       "config": {
