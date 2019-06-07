@@ -33,6 +33,7 @@ module.exports = {
                 },
                 linkResolver: ({ node, key, value }) => doc => linkResolver(doc)
             }
-        }
+        },
+        `gatsby-plugin-sitemap`
     ]
 }
