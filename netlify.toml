@@ -1,2 +1,6 @@
 [build]
   functions = "lambda"
+
+[[redirects]]
+  from = "/prismic"
+  to = "http://molder2.prismic.io/"
