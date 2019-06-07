@@ -24,7 +24,7 @@ export default ({ data: { prismicPosts } }) => {
                 text
             >
                 <Helmet>
-                    { data.preview_image.url && <meta property="og.:image" content={data.preview_image.url} /> }
+                    { data.preview_image.url && <meta property="og:image" content={data.preview_image.url} /> }
                     <meta property="description" content={previewText} />
                     <meta property="og:title" content={data.title.text} />
                     <meta property="og:type" content="article" />
