@@ -2,6 +2,11 @@ require('dotenv').config()
 const linkResolver = require('./src/utils/linkResolver')
 
 module.exports = {
+    siteMetadata: {
+        title: `molder`,
+        siteUrl: `https://molder.eu`,
+        description: `Hendrik's webpage`,
+    },
     plugins: [
         {
             resolve: 'gatsby-transformer-remark',
