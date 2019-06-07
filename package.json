@@ -19,6 +19,7 @@
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-prismic-preview": "^2.0.0",
     "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-robots-txt": "^1.4.0",
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sitemap": "^2.1.0",
     "gatsby-plugin-styled-components": "^3.0.7",
