@@ -7,19 +7,16 @@ import { Container } from 'semantic-ui-react'
 import SiteNavigation from '../SiteNavigation'
 import PageMetadata from '../PageMetadata'
 
-import 'prismjs/themes/prism-solarizedlight.css'
-import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
-import 'semantic-ui-css/semantic.min.css' /* Import Semantic-UI CSS */
-
 const MENU_ITEMS = [
     { name: "linkedin", href: "https://linkedin.com/in/hendrikmolder" },
     { name: "music", href: "/music" },
-    { name: "blog", href: "/blog" },
+    { name: "posts", href: "/blog" },
 ]
 
 const StyledContainer = styled(Container)`
     min-height: 100%;
     margin: 60px auto 100px;
+    font-family: 'Inter', sans-serif !important;
 
     img, iframe, pre, code {
         width: 100%;
@@ -42,19 +39,22 @@ const SubTitle = styled.h2`
     margin: 0 0 36px;
 `
 
-const Page = (props) => {
-    const { children, title, showTitle, subTitle, meta, text } = props
+const Layout = (props) => {
+    const { children, title, showTitle, subTitle, meta, text, className, noMenu } = props
     return (
         <React.Fragment>
-            <SiteNavigation items={MENU_ITEMS} />
-            <StyledContainer text={text && text}>
+            { !noMenu && <SiteNavigation items={MENU_ITEMS} /> }
+            <StyledContainer text={text && text} className={className}>
                 <Helmet>
                     <title>{ title ? `${title} | molder` : `molder` }</title>
                 </Helmet>
 
-                <MetaContainer>
-                    { meta && <PageMetadata {...meta} /> }
-                </MetaContainer>
+                { meta && (
+                    <MetaContainer>
+                        <PageMetadata {...meta} />
+                    </MetaContainer>
+                )}
+
                 { showTitle !== "false" ? title && <h1>{title}</h1> : null}
                 { subTitle && <SubTitle>{subTitle}</SubTitle>}
                 { children }
@@ -63,16 +63,18 @@ const Page = (props) => {
     )
 }
 
-Page.propTypes = {
+Layout.propTypes = {
     children: PropTypes.oneOfType([
         PropTypes.array,
         PropTypes.object
     ]).isRequired,
     title: PropTypes.string,
-    showTitle: PropTypes.bool,
+    showTitle: PropTypes.string,
     subTitle: PropTypes.string,
     text: PropTypes.bool,
-    meta: PropTypes.object
+    meta: PropTypes.object,
+    className: PropTypes.string,
+    noMenu: PropTypes.bool
 }
 
-export default Page
+export default Layout

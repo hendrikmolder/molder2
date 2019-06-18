@@ -19,7 +19,7 @@ const Container = styled.div`
 `
 
 const StyledMoment = styled(Moment)`
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     color: rgb(132, 132, 132);
 `

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CodeBlock renders correctly with title 1`] = `
+<div
+  className="sc-bdVaJa bqchxS"
+>
+  <div
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": undefined,
+      }
+    }
+  />
+</div>
+`;

@@ -1,5 +1,7 @@
 require('dotenv').config()
 const linkResolver = require('./src/utils/linkResolver')
+const htmlSerialiser = require('./src/utils/htmlSerialiser')
+
 const {
     NODE_ENV,
     URL: NETLIFY_SITE_URL = 'https://www.example.com',
@@ -16,12 +18,6 @@ module.exports = {
         description: `Hendrik's webpage`,
     },
     plugins: [
-        {
-            resolve: 'gatsby-transformer-remark',
-            plugins: [
-                `gatsby-remark-prismjs`
-            ],
-        },
         {
             resolve: `gatsby-plugin-favicon`,
             options: {
@@ -44,7 +40,8 @@ module.exports = {
                     resources: require('./src/schemas/resources.json'),
                     landing_page: require('./src/schemas/landing_page.json')
                 },
-                linkResolver: ({ node, key, value }) => doc => linkResolver(doc)
+                linkResolver: ({ node, key, value }) => doc => linkResolver(doc),
+                htmlSerializer: ({ node, key, value }) => htmlSerialiser
             }
         },
         `gatsby-plugin-sitemap`,
