@@ -10,13 +10,13 @@ const SliceWrapper = (props) => {
             case 'text':
                 return <BodyText key={s.id} input={s} />
             case 'code_block':
-                return <CodeBlock key={s.id} input={s} />
+                return <CodeBlock key={s.id} input={s} title='test' />
             default:
                 return null
         }
     })
 
-    return <React.Fragment>{slice}</React.Fragment>
+    return slice
 }
 
 SliceWrapper.propTypes = {
