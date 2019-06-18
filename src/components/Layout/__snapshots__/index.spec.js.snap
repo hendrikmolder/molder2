@@ -25,15 +25,12 @@ Array [
       href="/blog"
       partiallyActive={true}
     >
-      blog
+      posts
     </a>
   </div>,
   <div
-    className="ui container sc-ifAKCX gNRYGQ"
+    className="ui container sc-ifAKCX OLGY"
   >
-    <div
-      className="sc-EHOje hmOhql"
-    />
     <h1>
       Test
     </h1>
@@ -74,15 +71,12 @@ Array [
       href="/blog"
       partiallyActive={true}
     >
-      blog
+      posts
     </a>
   </div>,
   <div
-    className="ui container sc-ifAKCX gNRYGQ"
+    className="ui container sc-ifAKCX OLGY"
   >
-    <div
-      className="sc-EHOje hmOhql"
-    />
     <p>
       test
     </p>

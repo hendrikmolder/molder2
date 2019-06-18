@@ -13,7 +13,7 @@ exports[`PageMetadata renders correctly 1`] = `
   >
     test
     <time
-      className="sc-htpNat fBvumx"
+      className="sc-htpNat bweAlh"
       dateTime={"2019-06-02T14:49:07.000Z"}
     >
       2nd June 2019
