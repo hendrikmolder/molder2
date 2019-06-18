@@ -2,12 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import prismStyles from '../../styles/prism'
-
 const StyledContainer = styled.div`
-    /* ${prismStyles}; */
-    ${input =>
-        console.log("CSS", input)}
+    ${props => props.title && `pre { margin-top: 0!important; border-radius: 0 0 0.3em 0.3em !important; }`}
 `
 
 const Title = styled.div`
@@ -20,16 +16,15 @@ const Title = styled.div`
     color: #fff;
 `
 
-const CodeBlock = ({ input }) => {
-    console.log(input)
+const CodeBlock = ({ input }, props) => {
     const title = input.primary.file_name
 
-    return input.primary.file_name ?  (
-        <React.Fragment>
-            <Title>{title}</Title>
-            <StyledContainer dangerouslySetInnerHTML={{ __html: input.primary.code_block.html }} />
-        </React.Fragment>
-    ) : <StyledContainer dangerouslySetInnerHTML={{ __html: input.primary.code_block.html }} />
+    return (
+        <StyledContainer title={title}>
+            { title && <Title>{title}</Title> }
+            <div dangerouslySetInnerHTML={{ __html: input.primary.code_block.html }} />
+        </StyledContainer>
+    )
 }
 
 CodeBlock.propTypes = {
