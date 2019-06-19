@@ -2,8 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import prismStyles from '../../styles/prism'
+
 const StyledContainer = styled.div`
+    ${prismStyles}
     ${props => props.title && `pre { margin-top: 0!important; border-radius: 0 0 0.3em 0.3em !important; }`}
+    #text { font-size: 16px important }
 `
 
 const Title = styled.div`

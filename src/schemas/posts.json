@@ -10,7 +10,10 @@
     "show_title": {
       "type": "Select",
       "config": {
-        "options": ["true", "false"],
+        "options": [
+          "true",
+          "false"
+        ],
         "default_value": "true",
         "label": "Show Title"
       }
@@ -85,17 +88,24 @@
         "label": "Subtitle"
       }
     },
-    "date_published": {
-      "type": "Date",
+    "enable_comments": {
+      "type": "Select",
       "config": {
-        "label": "Date Published"
+        "options": [
+          "true",
+          "false"
+        ],
+        "default_value": "true",
+        "label": "Enable Comments"
       }
     },
     "author": {
       "type": "Link",
       "config": {
         "select": "document",
-        "customtypes": ["person"],
+        "customtypes": [
+          "person"
+        ],
         "label": "Author"
       }
     },
