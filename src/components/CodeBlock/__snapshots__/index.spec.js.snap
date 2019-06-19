@@ -2,7 +2,7 @@
 
 exports[`CodeBlock renders correctly with title 1`] = `
 <div
-  className="sc-bdVaJa bqchxS"
+  className="sc-bdVaJa kiLJAL"
 >
   <div
     dangerouslySetInnerHTML={
