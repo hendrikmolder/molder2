@@ -7,12 +7,76 @@
         "label": "Title"
       }
     },
-    "body": {
-      "type": "StructuredText",
+    "show_title": {
+      "type": "Select",
       "config": {
-        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
-        "allowTargetBlank": true,
-        "label": "Body"
+        "options": [
+          "true",
+          "false"
+        ],
+        "default_value": "true",
+        "label": "Show Title"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "code_block": {
+            "type": "Slice",
+            "fieldset": "Code Block",
+            "description": "Longer Code Block",
+            "icon": "code",
+            "display": "list",
+            "non-repeat": {
+              "file_name": {
+                "type": "Text",
+                "config": {
+                  "label": "File Name"
+                }
+              },
+              "code_block": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "preformatted",
+                  "label": "Code Block",
+                  "placeholder": "Paste your code here with a label",
+                  "labels": [
+                    "javascript",
+                    "css",
+                    "scss",
+                    "jsx",
+                    "bash",
+                    "json",
+                    "diff",
+                    "markdown",
+                    "graphql"
+                  ]
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "text": {
+            "type": "Slice",
+            "fieldset": "Text",
+            "description": "Rich Text Section",
+            "icon": "text_fields",
+            "non-repeat": {
+              "body": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true,
+                  "label": "text",
+                  "placeholder": "Your content here"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
       }
     }
   },
@@ -24,17 +88,24 @@
         "label": "Subtitle"
       }
     },
-    "date_published": {
-      "type": "Date",
+    "enable_comments": {
+      "type": "Select",
       "config": {
-        "label": "Date Published"
+        "options": [
+          "true",
+          "false"
+        ],
+        "default_value": "true",
+        "label": "Enable Comments"
       }
     },
     "author": {
       "type": "Link",
       "config": {
         "select": "document",
-        "customtypes": ["person"],
+        "customtypes": [
+          "person"
+        ],
         "label": "Author"
       }
     },

@@ -1,7 +1,6 @@
-@import url("https://use.typekit.net/bbn2cvb.css");
 @import url('https://rsms.me/inter/inter.css');
 
-html, p, span, body, h1, h2, h3, h4 { font-family: 'Inter', sans-serif !important; }
+html, p, body, h1, h2, h3, h4 { font-family: 'Inter', sans-serif; }
 
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
