@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { navigate } from 'gatsby'
 import { usePrismicPreview } from 'gatsby-source-prismic'
 
+import Layout from '../components/Layout'
 import linkResolver from '../utils/linkResolver'
 
 const PreviewPage = ({ location }) => {
@@ -17,7 +18,8 @@ const PreviewPage = ({ location }) => {
             })
         }
     }, [previewData, path])
-    return
+    
+    return <Layout title='Loading preview...'>This might take a moment.</Layout>
 }
 
 export default PreviewPage
