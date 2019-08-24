@@ -13,11 +13,14 @@
     "test": "jest"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.3.1",
+    "@mdx-js/react": "^1.3.1",
     "babel-plugin-styled-components": "^1.10.0",
     "disqus-react": "^1.0.5",
     "dotenv": "^8.0.0",
     "gatsby": "^2.8.2",
     "gatsby-plugin-favicon": "^3.1.6",
+    "gatsby-plugin-mdx": "^1.0.31",
     "gatsby-plugin-prismic-preview": "^2.0.0",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-robots-txt": "^1.4.0",
@@ -56,8 +59,16 @@
   "devDependencies": {
     "babel-jest": "^24.8.0",
     "babel-preset-gatsby": "^0.1.11",
+    "husky": "^3.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
     "react-test-renderer": "^16.8.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
