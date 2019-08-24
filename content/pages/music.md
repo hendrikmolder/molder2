@@ -5,13 +5,14 @@ type: page
 date: '2018-10-09T19+01:00'
 author: Hendrik Molder
 ---
+
 Since I was little, I've had the pleasure of learning the piano under the instruction of my piano teacher from the Kapp family. This passion of music grew into an interest in the organs once my school - Gustav Adolf Grammar School (GAG) - was donated two organs in 2015.
 
 While a student at GAG, a _signature piece _(inspired by Handel's Water Music) was developed for the School by an Estonian organist Toomas Trass. It quickly became a tradition to start every formal celebration, event, welcoming of domestic and foreign delegations with the signature piece played on the organ. As music teachers found the 100-years-old organ hard (and one really had to apply some light force sometimes) to learn and play, I enjoyed playing for presidents, heads of governments, ministers and secretaries, as well as teachers and students from abroad over the three years I spent at GAG.
 
 I've performed at organ festivals, and sometimes in music shows in Estonian Television and Classical Radio.
 
-![Photo from the Gustav Adolf Organ Festival in 2016 by GAG.](https://ucarecdn.com/32f0514e-46fb-42a9-98dd-9bf4796e0b79/ "Photo from the Gustav Adolf Organ Festival in 2016 by GAG.")
+![Photo from the Gustav Adolf Organ Festival in 2016 by GAG.](https://ucarecdn.com/32f0514e-46fb-42a9-98dd-9bf4796e0b79/ 'Photo from the Gustav Adolf Organ Festival in 2016 by GAG.')
 
 <small>Photo from the Gustav Adolf Organ Festival in 2016 by GAG.</small>
 
@@ -72,7 +73,7 @@ David Wells Organ Builders Ltd (2014)
 11 Trombone 16 \
 12 Bombarde 16 (from Great Bombarde) \
 13 Octave Trombone 8 (ext. Bombarde) \
-14 Schalmey 4 
+14 Schalmey 4
 
 **Positive **\
 15 Gemshorn 8 \
@@ -105,7 +106,7 @@ David Wells Organ Builders Ltd (2014)
 40 Mixture IV 19-22-26-29 \
 41 Bombarde 16 \
 42 Trumpet 8 (ext. Bombarde) \
-43 Clarion 4 
+43 Clarion 4
 
 **Swell (Enclosed)** \
 44 Geigen Diapason 8 \
@@ -121,7 +122,7 @@ David Wells Organ Builders Ltd (2014)
 54 Trumpet 8 \
 55 Hautboy 8 (ext. Bassoon) \
 56 Tremulant \
-57 Octave 
+57 Octave
 
 **Couplers **\
 Swell to Pedal \
@@ -129,7 +130,7 @@ Swell to Great \
 Great to Pedal \
 Positive to Pedal \
 Swell to Positive \
-Positive to Great 
+Positive to Great
 
 **Accessories **\
 Balanced mechnical swell pedal \
@@ -142,4 +143,4 @@ Gt-Ped toe piston
 
 </p></div></div>
 
-- - -
+---

@@ -5,6 +5,7 @@ type: page
 date: '2019-03-07T16+00:00'
 author: Hendrik
 ---
+
 # Stuff to give away
 
 Here's some stuff that I'm getting rid of before leaving Manchester. If you see something you like, just let me know.

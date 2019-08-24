@@ -6,6 +6,7 @@ type: page
 date: '2019-02-03T10+00:00'
 author: Hendrik
 ---
+
 Currently a computer science student at The University of Manchester.
 
 ## Experience
