@@ -1,0 +1,89 @@
+backend:
+  name: git-gateway
+  squash_merges: true
+
+media_folder: 'static/assets' # Media files will be stored in the repo under static/images/uploads
+public_folder: '/assets'
+
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+
+collections:
+  - name: 'people'
+    label: 'People'
+    folder: 'content/people'
+    extension: json
+    format: json
+    create: true
+    identifier_field: 'name'
+    fields:
+      - { name: 'name', label: 'Name' }
+      - { name: 'email', label: 'Email' }
+      - { name: 'avatar', label: 'Avatar', widget: 'image' }
+  - name: 'blog'
+    label: 'Posts'
+    folder: 'content/posts'
+    create: true
+    slug: '{{year}}-{{month}}-{{title}}'
+    extension: 'mdx'
+    format: 'frontmatter'
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Subtitle',
+          name: 'subtitle',
+          widget: 'string',
+          required: false,
+        }
+      - { label: 'Body', name: 'body', widget: 'mdx' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Author',
+          name: 'author',
+          widget: 'relation',
+          collection: 'people',
+          searchFields: [name, email],
+          valueField: email,
+          displayFields: [name, email],
+        }
+      - {
+          label: 'Featured Image',
+          name: 'thumbnail',
+          widget: 'image',
+          required: false,
+          hint: 'Recommended size: 600px x 350px',
+        }
+      - {
+          label: 'Enable comments',
+          name: 'enable_comments',
+          widget: 'boolean',
+          default: true,
+          required: false,
+          hint: 'Enables/Disables Disqus comments',
+        }
+  - name: 'pages'
+    label: 'Pages'
+    folder: 'content/pages'
+    create: true
+    extension: 'mdx'
+    format: 'frontmatter'
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Show Title',
+          name: 'showTitle',
+          widget: 'boolean',
+          required: false,
+          default: true,
+        }
+      - {
+          label: 'Subtitle',
+          name: 'subtitle',
+          widget: 'string',
+          required: false,
+        }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
