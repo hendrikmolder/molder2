@@ -14,8 +14,4 @@ Dotenv is recommended for working in the development environment.
 2. Create a new file in the root directory of the project called `.env` (please *do not* commit this file).
 3. Add the following lines to the `.env` file replacing _[KEY]_ with the actualy key.
 
-```
-CONTENTFUL_SPACE_ID=[KEY]
-CONTENTFUL_ACCESS_TOKEN=[KEY]
-```
 
