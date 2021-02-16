@@ -7,67 +7,61 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 
 const StyledItemHeader = styled(Item.Header)`
-    font-family: Inter;
+  font-family: Inter;
 `
 
 const PostCoverImage = styled(Image)`
-    :hover {
-        cursor: pointer;
-    }
+  :hover {
+    cursor: pointer;
+  }
 `
 
 export default ({ data }) => (
-
-    <Layout title='Posts' text>
-        <Item.Group link>
-            {data.allPrismicPosts.edges.map((node, key) => (
-                <React.Fragment>
-                    <PostCoverImage 
-                        src={node.node.data.preview_image.url} 
-                        onClick={() => navigate(`/blog/${node.node.uid}`)}
-                        fluid 
-                    />
-                    <Item onClick={() => navigate(`/blog/${node.node.uid}`)} key={node.node.uid}>
-                        <Item.Content>
-                            <StyledItemHeader>{node.node.data.title.text}</StyledItemHeader>
-                            <Item.Meta>
-                                <Moment format='Do MMMM YYYY'>{node.node.last_publication_date}</Moment>
-                                &nbsp;| &nbsp;{node.node.data.author.document.data.name.text}
-                            </Item.Meta>
-
-                        </Item.Content>
-                    </Item>
-                </React.Fragment>
-            ))}
-        </Item.Group>
-    </Layout>
+  <Layout title="Posts" text>
+    <Item.Group link>
+      {data.allMdx.edges.map((node, key) => (
+        <React.Fragment key>
+          <PostCoverImage
+            src={node.node.frontmatter.thumbnail}
+            onClick={() => navigate(node.node.fields.slug)}
+            fluid
+          />
+          <Item
+            onClick={() => navigate(node.node.fields.slug)}
+            key={node.node.uid}
+          >
+            <Item.Content>
+              <StyledItemHeader>{node.node.frontmatter.title}</StyledItemHeader>
+              <Item.Meta>
+                <Moment format="Do MMMM YYYY">
+                  {node.node.frontmatter.date}
+                </Moment>
+                &nbsp;| &nbsp;{node.node.frontmatter.author}
+              </Item.Meta>
+            </Item.Content>
+          </Item>
+        </React.Fragment>
+      ))}
+    </Item.Group>
+  </Layout>
 )
 
 export const pageQuery = graphql`
-    query {
-        allPrismicPosts {
-            edges {
-                node {
-                    uid
-                    data {
-                        title { text }
-                        preview_image { url }
-                        author {
-                            document {
-                                ... on PrismicPerson {
-                                    id
-                                    data {
-                                        name {
-                                            text
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    last_publication_date
-                }
-            }
+  query {
+    allMdx(filter: { frontmatter: { layout: { eq: "blog" } } }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            author
+            date
+            thumbnail
+          }
         }
+      }
     }
+  }
 `
